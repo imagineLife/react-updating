@@ -20,7 +20,7 @@ class App extends React.Component{
 	render(){
 		return (
 			<div>
-				<p>Parent Count: {this.state.count}</p>
+				<ChildFn name="showState" thisCount={this.state.count}/>
 				<ChildFn thisCount={this.state.otherCount}/>
 				<ChildClass thisCount={this.state.otherCount}/>
 				<button onClick={() => this.setState({count: (this.state.count+1)})}>UpdateParentCount</button>
