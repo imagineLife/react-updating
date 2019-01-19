@@ -1,3 +1,4 @@
-.frozenChild{
-	border: 1px solid green;
+.frozenFnChild{
+	border: 1px dotted brown;
+	margin: 8px 0;
 }

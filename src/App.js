@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ChildFn from './childFn'
 import ChildClass from './childClass'
+import './main.css'
 
 class App extends React.Component{
 	constructor(props){

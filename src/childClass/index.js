@@ -7,12 +7,14 @@ class ChildClass extends React.PureComponent{
 	}
 
 	render(){
+		//destructure props
+		let { thisCount } = this.props;
 		return (
-			<div className='frozenChild'>
-				<p>This is a react 'pureComponent'.</p>
+			<div className='frozenClassChild'>
 				<p>This will not update unless the props are different.</p>
 				<p>This has an 'innerState' value of {this.state.innerState}</p>
-				<p>This gets a prop value of {this.props.thisCount}</p>
+				<p>This gets a prop value of {thisCount}</p>
+				<p>This is a react <b>'pureComponent'.</b></p>
 			</div>
 		);
 	}

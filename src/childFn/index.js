@@ -5,7 +5,7 @@ import './index.css'
 const Child = React.memo(({thisCount, name}) => {
 	console.log(`Rendering ${name}`);
   return (
-    <div className='frozenChild'>
+    <div className='frozenFnChild'>
       <p>This is a child fn component.</p>
       <p>This will not update unless the props are different.</p>
       <p>This gets a prop value of {thisCount}</p>
